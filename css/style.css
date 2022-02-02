@@ -7,13 +7,13 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 html, 
 body {
     max-width: 100%;
     overflow-x: hidden;
-    /* font-size: 100%; */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -32,16 +32,30 @@ body {
     color: #D2872C;
 }
 
+.menu-bar {
+    font-size: 1.5em;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
 .menu { 
     display: flex; 
-    gap: 20px;
-    
+    gap: 20px; 
 }
 
 .menu-element {
-    font-weight: 600; 
+    display: flex;
+    gap: 20px;
+    font-weight: 500; 
     padding: 5px;
     color: rgba(0, 0, 0, 0.61);
+}
+
+.menu-element a {
+    color: black;
 }
 
 .conteiner {
@@ -66,7 +80,7 @@ body {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.61);
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 1.25em; 
 }
 
 .button-start {
@@ -80,12 +94,12 @@ body {
     font-size: 15px;
     text-shadow: #ffff;
     margin-top: 25px;
+    transition: all 0.5s;
 }
 
-.botao:hover {
+.button-start:hover {
     background-color: rgba(233, 156, 92, 0.897);
 }
-
 
 .wallpaper img {
     background-attachment: fixed;
@@ -95,6 +109,7 @@ body {
     width: 590px;  
     margin-top: 71px;
     margin-left: 560px;
+    transition: all 0.5s;
 }
 
 footer {
