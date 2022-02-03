@@ -41,11 +41,6 @@ body {
     display: none;
 }
 
-.menu { 
-    display: flex; 
-    gap: 20px; 
-}
-
 .menu-element {
     display: flex;
     gap: 20px;
