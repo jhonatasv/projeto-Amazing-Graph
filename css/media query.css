@@ -1,25 +1,9 @@
-@media(max-width: 1300px) {
-    .content {
-        position: absolute;
-        top: 25%;
-        left: 18%;
-
-    }
-
-    .wallpaper img  {
-        max-height: 420px;
-        width: 540px;
-        margin-top: 67px;
-        margin-left: 480px;
-    }
-}
-       
-@media (max-width: 1110px) {
+@media (max-width: 1293px) {
     .wallpaper img {
-        max-height: 420px;
         width: 530px;
         margin-top: 71px;
-        margin-left: 435px;
+        margin-left: 460px;
+        
     }
 
     .content {
@@ -27,7 +11,7 @@
         top: 25%;
         left: 16%;
     }
-}
+} 
 
 @media (max-width: 980px) {
     .wallpaper img {
@@ -39,34 +23,20 @@
     
 }
 
-/* @media (max-width: 929px) { 
-    .conteiner {
-        margin-top: 10px; 
-        background-color: aqua;
-    }
-
-    .wallpaper img {
-        max-height: 420px;
-        width: 490px;
-        margin-top: 20px;
-        margin-left: 409px;
-    }
-} */
-
 @media (max-width: 929px) {
     .header {
         justify-content: space-between; 
     }
     
-    .menu-bar {
+    label.menu-hamburguer {
         display: block;
     }
 
-    .menu-element {
+    ul.menu-element {
         position: fixed;
         width: 100%;
         height: 100%;
-        background-color: #636363;
+        background-color: #0e0d0d;
         top: 99px;
         left: -100%;
         display: flex;
@@ -77,14 +47,23 @@
     }
 
     .menu-element li {
-      margin: 20px 0;
-      padding: 10px;
-      line-height: 20px;
+      margin: 20px 0; 
+      padding: 10px; 
+      line-height: 20px; 
     }
 
-    .menu-element li a {
+    .menu-element a {
         font-size: 1.2em;
-        transition: all 0.1s;
+        transition: all 0.5s;
+        color: rgba(255, 255, 255, 0.555);
+    }
+
+    .menu-element a::after {
+       background-color:  aquamarine;
+    }
+
+    .menu-element a:hover {
+        color: white;
     }
 
     #check:checked ~ .menu-element {
@@ -122,9 +101,6 @@
     }
 
     .wallpaper img {
-        /* height: 420px; */
-        /* max-width: 400px;
-        min-width: 356px; */
         max-width: 100%;
         margin: 0;
     }

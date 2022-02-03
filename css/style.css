@@ -32,7 +32,7 @@ body {
     color: #D2872C;
 }
 
-.menu-bar {
+.menu-hamburguer {
     font-size: 1.5em;
     display: none;
 }
@@ -50,7 +50,25 @@ body {
 }
 
 .menu-element a {
+    position: relative;
     color: black;
+    letter-spacing: 0.5s;
+    padding: 0 5px;
+}
+
+.menu-element a::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.562);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s;
+}
+
+.menu-element a:hover::after {
+    width: 100%;
 }
 
 .conteiner {
