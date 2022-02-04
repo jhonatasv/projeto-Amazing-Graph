@@ -32,7 +32,11 @@
         display: block;
     }
 
-    ul.menu-element {
+    .menu-icone {
+        width: 38px;
+    }
+
+    .menu-element {
         position: fixed;
         width: 100%;
         height: 100%;
