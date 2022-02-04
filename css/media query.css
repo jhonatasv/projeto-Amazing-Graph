@@ -26,6 +26,7 @@
 @media (max-width: 929px) {
     .header {
         justify-content: space-between; 
+        gap: 124px
     }
     
     label.menu-hamburguer {
@@ -33,7 +34,7 @@
     }
 
     .menu-icone {
-        width: 38px;
+        width: 35px;
     }
 
     .menu-element {
